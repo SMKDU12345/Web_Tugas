@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Uang</title>
+    <script src="konversi.js"></script>
+    <link rel="stylesheet" href="konversi.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Konverter Mata Uang</h1>
+            <table>
+                <tr>
+                    <th>Masukan Nominal</th>
+                    <th>Mata Uang Asing</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td><input id="input_nilai" placeholder="masukan nilai uang" type="text"></td>
+                    <td><select id="valas" onclick="ubah_nilai()" id="ubahnilai">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">US Dollar</option>
+                        <option value="SGD">Dollar Singapore</option>
+                        <option value="YEN">Yen Jepang</option>
+                        <option value="RAS">Riyal Arab Saudi</option>
+                    </select></td>
+                    <td><input id="hasil_nilai" readonly value="0" type="text"></td>
+                </tr>
+            </table>
+    </form>
+    <h3>Nilai Rupiah saat ini :<br>
+        <table>
+        <tr>
+            <td>1 Euro </td>
+            <td>Rp.15888</td>
+        </tr>
+        <tr>
+            <td>1 USD</td>
+            <td>Rp.9915</td>
+        </tr>
+        <tr>
+            <td>1 SGD</td>
+            <td>Rp.13472</td>
+        </tr>
+        <tr>
+            <td>1 Yen</td>
+            <td>Rp.120</td>
+        </tr>
+        <tr>
+            <td>1 Riyal</td>
+            <td>Rp.3592</td>
+        </tr>
+    </table>
+</fieldset>
+</body>
+</html>

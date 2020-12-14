@@ -1,0 +1,11 @@
+form{
+    display: inline;
+    background: #f7f7f7;
+}
+table{
+    border: 1px solid blue;
+}
+table th{
+    padding: 1px 1px;
+    background: #f7f7f7;
+}

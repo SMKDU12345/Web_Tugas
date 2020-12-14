@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+        <meta charset="utf-8">
+        <meta name="viewport">
+    </head>
+    <style>
+     #typing_message_box {
+        position: fixed center;
+        bottom: 3vh;
+        left: 4vw;
+        width: 50vw;
+        height: 30px;
+        word-spacing: 1pt;
+        letter-spacing: 0.6pt;
+        color: black;
+        border: 1px solid grey;
+        padding-left: 2%;
+    }
+    #send-button {
+        width: 18vw;
+        height: 30px;
+        position: fixed center;
+        font-size: 14px;
+        font-weight: bold;
+        bottom: 2vh;
+        right: 3vw;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid gray;
+        color: black;
+        background-color: blues;
+    }
+    .sender-container {
+        border-radius: 20px;
+        background-color: cyan;
+        color: gray;
+        padding: 10px;
+        max-width: 50vw;
+        margin: 2px 0 2px 50vw;
+        font-family: 'Tahoma', Times, serif;
+        word-wrap: break-word;
+    }
+    .receiver-container {
+        border-radius: 10px;
+        max-width: 40vw;
+        border: solid blue 1.50px;
+        color: blue;
+        padding: 10px;
+        max-width: 50vw;
+        margin: 2px 0 2px 50vw;
+        float: right;
+        font-family: 'Tahoma', Times, serif;
+        word-wrap: break-word;
+    }
+   
+    </style>
+    <body>
+               
+        <input type="text" placeholder="type something..." id="typing_message_box">
+        <button id="send-button" class="nav-item btn btn-primary tombol"
+        onclick="send_text();">Kirim</button>
+        <script>
+            function send_text() {
+                var x =
+            document.getElementById("typing_message_box").value;
+                var elem = document.createElement('div');
+                var text = document.createTextNode(x);
+                elem.appendChild(text);
+                elem.className = 'receiver-container';
+                document.body.appendChild(elem);
+            document.getElementById('typing_message_box').value;
+            document.getElementById('typing_message_box').focus();
+            }
+        </script>
+    </body>
+</html>
